@@ -4,7 +4,7 @@
 #
 Name     : pypi-rfc3986
 Version  : 2.0.0
-Release  : 55
+Release  : 56
 URL      : https://files.pythonhosted.org/packages/85/40/1520d68bfa07ab5a6f065a186815fb6610c86fe957bc065754e47f7b0840/rfc3986-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/85/40/1520d68bfa07ab5a6f065a186815fb6610c86fe957bc065754e47f7b0840/rfc3986-2.0.0.tar.gz
 Summary  : Validating URI References per RFC 3986
@@ -14,8 +14,8 @@ Requires: pypi-rfc3986-license = %{version}-%{release}
 Requires: pypi-rfc3986-python = %{version}-%{release}
 Requires: pypi-rfc3986-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : py
-BuildRequires : pytest
+BuildRequires : pypi-py
+BuildRequires : pypi-pytest
 
 %description
 rfc3986
@@ -59,7 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641942348
+export SOURCE_DATE_EPOCH=1650514305
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
